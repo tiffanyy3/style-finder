@@ -2,21 +2,22 @@
 {% block content %}
 <form action="/results" method="post">
     <p>
-        <label for="place">Place</label><br>
-        <input type="text" name="place" id="place">
+        <label for="color">1. What color are your veins?</label><br>
+        <select name="color" id="color">
+    <option value="blue/purple">blue/purple</option>
+  <option value="yellow/green">yellow/green</option>
+            <option value="I can't tell">I can't tell</option>
+</select>
     </p>
     </p>
-    <label for="max_results">Maximum number of results</label><br>
-    <input type="number" name="max_results" id="max_results" value="10">
+        <label for="style">2. Select a style!</label><br>
+        <select name="style" id="style">
+    <option value="streetwear">streetwear</option>
+  <option value="soft girl">soft girl</option>
+            <option value="athleisure">athleisure</option>
+            <option value="business casual">business casual</option>
+            <option value="minimalistic">minimalistic</option>
     </p>
-    </p>
-    <label for="radius">Radius within which to return results (in miles)</label></br>
-    <input type="number" name="radius" id="radius" value="2">
-    </p>
-    </p>
-    <label for="sort">Sort results (longest-article-first)?</label>
-    <input type="checkbox" name="sort" id="sort" value="True">
-</p>
 <p><input type="submit" value="SUBMIT"></p>
 </form>
 {% endblock %}

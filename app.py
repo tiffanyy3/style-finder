@@ -5,6 +5,12 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+    # if "selection == blue/purple":
+        # print("You are cool toned! Silver and rose gold jewelry look best on you. Styles in green, blue, purple, and black suit you well.")
+    # if "selection == yellow/green":
+        # print("You are warm toned! Gold jewelry looks best on you. Styles in red, orange, yellow, and brown suit you well.")
+    # if "selection == I can't tell":
+    # print("You are neutral toned! Everything suits you well! You can't go wrong with any color.")
 @app.route("/results", methods=["GET","POST"])
 def results():
     if request.method == "POST":
